@@ -22,6 +22,8 @@ import {
     SiAmazons3,
     SiAuth0,
     SiShopify,
+    SiAmazonec2,
+    SiAmazoniam,
     SiWebflow
 } from "react-icons/si";
 import { FaAws } from "react-icons/fa";
@@ -74,6 +76,8 @@ export default function DevProjectCard({ project }: { project: Project }) {
         "Cognito": SiAmazoncognito,
         "API Gateway": SiAmazonapigateway,
         "S3": SiAmazons3,
+        "EC2": SiAmazonec2,
+        "IAM": SiAmazoniam,
         "OAuth2.0": SiAuth0,
         "Shopify": SiShopify,
         "Webflow": SiWebflow,
