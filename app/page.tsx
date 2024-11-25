@@ -24,7 +24,7 @@ export default function HomePage() {
   ];
 
   return (
-    <main className="p-8 space-y-24">
+    <main className="p-8 space-y-24 bg-base-200">
       
       {/* Hero Section */}
       <section className="flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-8">
@@ -34,13 +34,18 @@ export default function HomePage() {
             alt="Itamar Kamar, Experienced Developer and Business Strategist" 
             width={500} 
             height={500} 
-            className="rounded-lg shadow-lg"
+            className="rounded-lg shadow-lg mx-auto"
           />
         </div>
         <div className="w-full md:w-1/2 space-y-6">
           <h1 className="text-4xl font-bold text-white-800">Welcome to Itamar Kamar’s Portfolio</h1>
           <p className="text-lg text-white-600">
-            With over 13 years of experience in software development, 9 years in business development, and 19 years as a dedicated educator, I bring a wealth of knowledge across these domains. Here, you'll find a showcase of my work, from innovative development projects to strategic business initiatives and impactful teaching methods.
+            With over 19 years as a dedicated educator, 
+            13 years of experience in software development, 
+            and 9 years in business development, 
+            I bring a wealth of knowledge across these domains. 
+            Here, you'll find a showcase of my work, 
+            from impactful teaching methods to innovative development projects, and strategic business initiatives.
           </p>
           <div className="flex flex-wrap gap-4 mt-4">
             <Link href="/teaching">
