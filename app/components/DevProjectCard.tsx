@@ -41,6 +41,7 @@ type Project = {
     shortDescription: string;
     image?: string;
     link?: string;
+    logoHorizontal?: boolean;
 };
 
 export default function DevProjectCard({ project }: { project: Project }) {
@@ -85,22 +86,31 @@ export default function DevProjectCard({ project }: { project: Project }) {
 
     return (
         <div
-            className="relative p-6 pb-4 bg-white bg-opacity-15 rounded-lg shadow-md space-y-3 hover:shadow-lg transition-shadow duration-300 cursor-pointer font-sans group"
+            className="relative p-6 pb-4 bg-white bg-opacity-5 rounded-lg shadow-md space-y-3 hover:shadow-lg transition-shadow duration-300 cursor-pointer font-sans group"
             onClick={handleToggleDescription}>
-                {
-                    project.link &&
-                        <Link href={project?.link} target="_blank">
-                            <RiExternalLinkFill className="absolute top-3 right-3 text-xl text-primary transition-transform duration-300 hover:text-secondary" />
-                        </Link>    
-                }
                 
-            <div className="flex flex-row">
-                <img
+            <div className="flex flex-row items-center">
+                {/* <img
                     src={imagePath}
                     alt={project.title}
                     className="w-16 h-8 object-scale-down rounded-lg mr-4"
-                />
+                /> */}
                 <h1 className="text-2xl font-semibold text-white">{project.title}</h1>
+                <img
+                    src={imagePath}
+                    alt={project.title}
+                    className={`${project.logoHorizontal?"w-16":"w-8"} h-8 object-scale-down rounded-lg mx-4 self-end`}
+                />
+                {
+                    project.link &&
+                        <Link href={project?.link} target="_blank">
+                            {/* <RiExternalLinkFill className="absolute top-3 right-3 text-xl text-primary transition-transform duration-300 hover:text-secondary" /> */}
+                            <RiExternalLinkFill className="text-xl text-primary transition-transform duration-300 hover:text-secondary" />
+                        </Link>    
+                }
+
+                
+
                 <div className="flex flex-col">
 
                     {/* <p className="text-sm text-gray-200">
