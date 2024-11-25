@@ -44,7 +44,7 @@ export default function HomePage() {
             13 years of experience in software development, 
             and 9 years in business development, 
             I bring a wealth of knowledge across these domains. 
-            Here, you'll find a showcase of my work, 
+            Here, you&#39;ll find a showcase of my work, 
             from impactful teaching methods to innovative development projects, and strategic business initiatives.
           </p>
           <div className="flex flex-wrap gap-4 mt-4">
@@ -128,7 +128,7 @@ export default function HomePage() {
       <section className="text-center space-y-6">
         <h2 className="text-3xl font-semibold text-gray-800">Get in Touch with Itamar Kamar</h2>
         <p className="text-lg text-gray-600 max-w-xl mx-auto">
-          I&#39;m always open to new opportunities and connections. Whether you're interested in collaborating on a project, learning more about my work, or discussing business opportunities, feel free to reach out.
+          I&#39;m always open to new opportunities and connections. Whether you&#39;re interested in collaborating on a project, learning more about my work, or discussing business opportunities, feel free to reach out.
         </p>
         <Link href="/contact">
           <button className="btn btn-primary">Contact Me</button>
