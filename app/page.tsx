@@ -38,7 +38,7 @@ export default function HomePage() {
           />
         </div>
         <div className="w-full md:w-1/2 space-y-6">
-          <h1 className="text-4xl font-bold text-white-800">Welcome to Itamar Kamar’s Portfolio</h1>
+          <h1 className="text-4xl font-bold text-white-800">Welcome to Itamar Kamar&#39;s Portfolio</h1>
           <p className="text-lg text-white-600">
             With over 19 years as a dedicated educator, 
             13 years of experience in software development, 
@@ -65,7 +65,7 @@ export default function HomePage() {
       <section className="text-center space-y-6">
         <h2 className="text-3xl font-semibold text-white-800">Dedicated Educator Across Multiple Disciplines</h2>
         <p className="text-lg text-white-600 mb-8">
-          I’ve taught subjects including Math, Coding, Accounting, Economics, and AI. <br/>
+          I&#39;ve taught subjects including Math, Coding, Accounting, Economics, and AI. <br/>
           Each course is designed to empower students with real-world skills.
         </p>
         <div className="flex justify-center gap-8">
@@ -128,7 +128,7 @@ export default function HomePage() {
       <section className="text-center space-y-6">
         <h2 className="text-3xl font-semibold text-gray-800">Get in Touch with Itamar Kamar</h2>
         <p className="text-lg text-gray-600 max-w-xl mx-auto">
-          I’m always open to new opportunities and connections. Whether you're interested in collaborating on a project, learning more about my work, or discussing business opportunities, feel free to reach out.
+          I&#39;m always open to new opportunities and connections. Whether you're interested in collaborating on a project, learning more about my work, or discussing business opportunities, feel free to reach out.
         </p>
         <Link href="/contact">
           <button className="btn btn-primary">Contact Me</button>
