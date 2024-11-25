@@ -51,7 +51,7 @@ export default function DevProjectCard({ project }: { project: Project }) {
         setIsDescriptionVisible(!isDescriptionVisible);
     };
 
-    const techStackIcons: Record<string, React.ComponentType<any>> = {
+    const techStackIcons: Record<string, React.ComponentType<React.SVGProps<SVGSVGElement>>> = {
         "C#": SiCsharp,
         "JavaScript": SiJavascript,
         "Python": SiPython,
@@ -138,7 +138,6 @@ export default function DevProjectCard({ project }: { project: Project }) {
                             <div className="px-2 py-2 mx-2 flex flex-col items-center gap-2" key={tech}>
                                 <Icon
                                     className="text-2xl text-primary mx-2"
-                                    title={tech} // Add a tooltip
                                 />
                                 <p className="text-sm text-white">{tech}</p>
                             </div>
